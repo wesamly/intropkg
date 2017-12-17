@@ -1,0 +1,29 @@
+{
+    "name": "lsdev/intropkg",
+    "description": "Laravel Intro Package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Wesam Alalem",
+            "email": "wesam@wesam.ly"
+        }
+    ],
+    "require": {
+        "spatie/emoji": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lsdev\\Intropkg\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lsdev\\Intropkg\\IntropkgServiceProvider"
+            ],
+            "aliases": {
+                "Mongo": "Lsdev\\Intropkg\\IntropkgFacade"
+            }
+        }
+    }
+}
